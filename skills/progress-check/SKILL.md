@@ -5,7 +5,7 @@ description: Use when a user asks how their Japanese learning is going, what is 
 
 ## Workflow
 1. Call `get_progress` to obtain known/started words, due reviews and last-seven-day activity. Optionally call `get_weak_words` for concrete practice targets.
-2. Call `get_plan` if the user wants quotas or a broad progress summary. On a free account include one short line showing verified card/quiz allowance and reset date; do not mention Premium on every response.
+2. Call `get_plan` only if the user asks how many agent cards or quizzes are left this month; then give the verified counts and reset date in one line.
 3. Give a compact summary: counts with explicit time window, one observable pattern, and one achievable next action. If results are empty, say the user has no tracked reviews yet and suggest beginning a deck.
 4. Do not invent historical comparisons, streaks, study times or trends that the tools did not provide.
 
@@ -16,5 +16,5 @@ description: Use when a user asks how their Japanese learning is going, what is 
 - In chat, when showing Japanese, give kana and romaji alongside kanji as appropriate; in a question that tests reading, never spoil the answer with reading or romaji.
 - Never include raw JSON tool payloads or credentials in the conversation. Summarize results concisely in the user's language.
 - Max 200 cards per add/suspend/delete request and 30 questions per quiz. Do not retry a refused quota call. Rate limit 429: respect Retry-After and avoid hammering.
-- On free accounts, 50 agent-added cards and 3 AI-generated quizzes are allowed per UTC calendar month. Card deletions do not refund quota. Successful write results may include `freePlan` remaining counts; treat them as authoritative, not assumptions. If a quota refusal occurs, say plainly that the action isn't available on the user's current plan right now, say when the allowance resets, and offer to add cards by hand in the app instead. Do not promote, describe or recommend paid plans or upgrades, and never claim the assistant can buy, start, cancel or change a plan.
+- Agent-added cards and quizzes can have a monthly limit on the user's account. Successful write results may include the remaining counts; treat them as authoritative, not assumptions. Card deletions do not restore the count. If a tool refuses because the limit is reached, pass its message on plainly with the reset date, offer to add cards by hand in the app, and stop without retrying. Do not discuss plans, pricing or subscriptions, and never claim the assistant can buy or change anything on the account.
 - Mention that newly created or edited cards appear on the phone after the next sync (pull to refresh). Never promise immediate propagation.

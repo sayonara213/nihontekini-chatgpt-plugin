@@ -27,7 +27,6 @@ dictionary. There are predefined JLPT decks and your own decks; ChatGPT works wi
 | `quiz-me` | A quiz on your weakest words, one question at a time, saved to the app | "Quiz me on the words I keep forgetting" |
 | `fix-cards` | Fix a reading or meaning, move cards between decks, suspend words you already know, delete cards (ChatGPT asks first) | "I already know ありがとう, stop showing it" |
 | `progress-check` | A short summary: words started and known, reviews due, your weakest words | "How am I doing this week?" |
-| `plan-and-limits` | Which plan you're on and what is left of this month's AI allowance | "How many AI cards and quizzes do I have left this month?" |
 
 ## Install
 
@@ -37,20 +36,12 @@ When you connect, you sign in once in the browser with your email and a one-time
 in with Apple), then approve the connection. If you don't have an account yet, signing in
 creates one. You can revoke the connection any time in the app under **Me > AI agents**.
 
-## Plans
-
-Studying your own cards is always free. On the free plan, AI agents such as ChatGPT can add 50
-cards and make 3 quizzes a month, and the allowance resets on the 1st (UTC). Premium removes
-those limits, unlocks the predefined JLPT N4 to N1 decks and makes the in-app Test me
-unlimited. Premium is bought only in the iPhone app, under **Me > Premium**; ChatGPT can tell
-you what is left but can't buy or change your plan.
-
 ## Data
 
 The plugin has no code of its own. It is skills (instructions for ChatGPT) and one remote MCP
 server, `https://api.nihontekini.app/mcp`, run by Nihontekini. Through it, ChatGPT reads and
 changes your Nihontekini data: decks and cards, review history and progress, quizzes and your
-answers, and your plan and how much of the free monthly allowance is left. It sends nothing
+answers, and how many agent-added cards and quizzes are left this month. It sends nothing
 anywhere else. See the [privacy policy](https://nihontekini.app/privacy) and
 [terms](https://nihontekini.app/terms).
 
@@ -65,7 +56,7 @@ Questions and bug reports: [help@nihontekini.app](mailto:help@nihontekini.app).
 | `plugin.json` | Plugin manifest (listing copy, icon, starter prompts) |
 | `.codex-plugin/plugin.json` | The same manifest in the Codex plugin layout, pointing at `skills/` and `.mcp.json` |
 | `.mcp.json`, `mcp.json` | The Nihontekini remote MCP server: Streamable HTTP, OAuth with dynamic client registration, scopes `read` and `write` |
-| `skills/` | The six skills above; each has an `agents/openai.yaml` with its display name and MCP dependency |
+| `skills/` | The five skills above; each has an `agents/openai.yaml` with its display name and MCP dependency |
 | `assets/logo.png` | Square app icon, also used as the composer icon |
 
 Raise `version` in both manifests with every release. The server is POST-only, so a `GET /mcp`
