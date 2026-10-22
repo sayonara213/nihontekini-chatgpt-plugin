@@ -1,6 +1,6 @@
 interface:
   display_name: "Learning progress"
-  short_description: "Use when a user asks how their Japanese learning is going, what is due, how"
+  short_description: "Summarize your Japanese study progress"
   default_prompt: "How is my Japanese study going?"
 dependencies:
   tools:

@@ -1,6 +1,6 @@
 interface:
   display_name: "Fix cards"
-  short_description: "Use when the user wants to find, correct, move, suspend, unsuspend, or dele"
+  short_description: "Fix, move, suspend or delete your flashcards"
   default_prompt: "Help me correct my flashcards."
 dependencies:
   tools:

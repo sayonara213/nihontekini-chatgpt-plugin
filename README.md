@@ -27,7 +27,7 @@ dictionary. There are predefined JLPT decks and your own decks; ChatGPT works wi
 | `quiz-me` | A quiz on your weakest words, one question at a time, saved to the app | "Quiz me on the words I keep forgetting" |
 | `fix-cards` | Fix a reading or meaning, move cards between decks, suspend words you already know, delete cards (ChatGPT asks first) | "I already know ありがとう, stop showing it" |
 | `progress-check` | A short summary: words started and known, reviews due, your weakest words | "How am I doing this week?" |
-| `plan-and-limits` | What is left of the free plan this month and what Premium adds | "How many AI cards and quizzes do I have left this month?" |
+| `plan-and-limits` | Which plan you're on and what is left of this month's AI allowance | "How many AI cards and quizzes do I have left this month?" |
 
 ## Install
 

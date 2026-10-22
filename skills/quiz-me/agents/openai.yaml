@@ -1,6 +1,6 @@
 interface:
   display_name: "Quiz me"
-  short_description: "Use when a user asks to quiz, test, drill, or practice weak Japanese words "
+  short_description: "Quiz yourself on the words you keep forgetting"
   default_prompt: "Quiz me on Japanese words I forget."
 dependencies:
   tools:

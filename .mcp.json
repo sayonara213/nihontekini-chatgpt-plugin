@@ -3,7 +3,6 @@
     "nihontekini": {
       "type": "streamable-http",
       "url": "https://api.nihontekini.app/mcp",
-      "headers": {},
       "extensions": {
         "com.openai": {
           "auth": {

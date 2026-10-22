@@ -1,6 +1,6 @@
 interface:
   display_name: "Explain a word"
-  short_description: "Use when the user asks what a Japanese term, phrase, or kanji means and may"
+  short_description: "Explain a Japanese word and save it as a card"
   default_prompt: "Explain this Japanese word."
 dependencies:
   tools:

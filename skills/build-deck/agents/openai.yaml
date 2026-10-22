@@ -1,6 +1,6 @@
 interface:
   display_name: "Build a deck"
-  short_description: "Use when a user asks to build or extend Japanese vocabulary decks from a to"
+  short_description: "Turn a topic, JLPT level or text into flashcards"
   default_prompt: "Create a Japanese vocabulary deck for me."
 dependencies:
   tools:
