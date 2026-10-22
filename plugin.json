@@ -105,7 +105,7 @@
         }
       },
       "publication": {
-        "release_notes": "Removed plan and subscription wording from the listing and skills, and added review test cases."
+        "release_notes": "Simpler listing text and skills, and added review test cases."
       }
     }
   }
