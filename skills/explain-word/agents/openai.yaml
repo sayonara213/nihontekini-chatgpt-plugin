@@ -1,0 +1,11 @@
+interface:
+  display_name: "Explain a word"
+  short_description: "Use when the user asks what a Japanese term, phrase, or kanji means and may"
+  default_prompt: "Explain this Japanese word."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "nihontekini"
+      description: "Manage Japanese flashcards and learning progress in Nihontekini"
+      transport: "streamable_http"
+      url: "https://api.nihontekini.app/mcp"

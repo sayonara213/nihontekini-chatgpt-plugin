@@ -1,0 +1,39 @@
+{
+  "interface": {
+    "displayName": "Nihontekini",
+    "shortDescription": "Study Japanese with your decks",
+    "longDescription": "Create and manage Japanese vocabulary flashcards in Nihontekini, practice difficult words with personalized quizzes, correct cards and check learning progress. Free accounts can add up to 50 cards and create 3 quizzes using AI agents per UTC calendar month; the allowance resets monthly. Studying your own cards remains free. Premium, purchased only in the Nihontekini iOS app under Me > Premium, removes these AI limits, unlocks JLPT N4\u2013N1 decks and unlimited in-app Test me. Your cards sync to the iOS app. Connect your Nihontekini account to start; this plugin cannot purchase or manage subscriptions.",
+    "developerName": "Nihontekini",
+    "category": "Education & Research",
+    "capabilities": [],
+    "websiteURL": "https://nihontekini.app",
+    "supportURL": "https://nihontekini.app/support",
+    "privacyPolicyURL": "https://nihontekini.app/privacy",
+    "termsOfServiceURL": "https://nihontekini.app/terms",
+    "defaultPrompt": [
+      "Add 20 N5 food words to a Kitchen deck.",
+      "Quiz me on the Japanese words I keep forgetting.",
+      "How many AI cards and quizzes do I have left this month?"
+    ],
+    "logo": "./assets/logo.png",
+    "composerIcon": "./assets/logo.png"
+  },
+  "name": "nihontekini",
+  "version": "1.1.2",
+  "description": "Connect Nihontekini Japanese vocabulary decks, spaced repetition and quizzes to ChatGPT.",
+  "author": {
+    "name": "Nihontekini"
+  },
+  "keywords": [
+    "japanese",
+    "flashcards",
+    "spaced repetition",
+    "FSRS",
+    "JLPT",
+    "vocabulary"
+  ],
+  "homepage": "https://nihontekini.app",
+  "repository": "https://github.com/sayonara213/nihontekini-main",
+  "skills": "./skills",
+  "mcpServers": "./.mcp.json"
+}

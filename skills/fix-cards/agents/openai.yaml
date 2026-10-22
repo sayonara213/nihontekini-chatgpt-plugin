@@ -1,0 +1,11 @@
+interface:
+  display_name: "Fix cards"
+  short_description: "Use when the user wants to find, correct, move, suspend, unsuspend, or dele"
+  default_prompt: "Help me correct my flashcards."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "nihontekini"
+      description: "Manage Japanese flashcards and learning progress in Nihontekini"
+      transport: "streamable_http"
+      url: "https://api.nihontekini.app/mcp"

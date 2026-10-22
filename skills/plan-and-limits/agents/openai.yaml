@@ -1,0 +1,11 @@
+interface:
+  display_name: "Plan and limits"
+  short_description: "Use when the user asks about Nihontekini Free vs Premium, remaining AI-agen"
+  default_prompt: "How many cards can I still add this month?"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "nihontekini"
+      description: "Manage Japanese flashcards and learning progress in Nihontekini"
+      transport: "streamable_http"
+      url: "https://api.nihontekini.app/mcp"

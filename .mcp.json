@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "nihontekini": {
+      "type": "streamable-http",
+      "url": "https://api.nihontekini.app/mcp",
+      "headers": {},
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "dcr"
+            },
+            "baseScopes": [
+              "read",
+              "write"
+            ],
+            "defaultScopes": [
+              "read",
+              "write"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

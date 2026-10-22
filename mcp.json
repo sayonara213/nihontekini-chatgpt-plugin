@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "nihontekini": {
+      "type": "streamable-http",
+      "url": "https://api.nihontekini.app/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "dcr"
+            },
+            "baseScopes": [
+              "read",
+              "write"
+            ],
+            "defaultScopes": [
+              "read",
+              "write"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

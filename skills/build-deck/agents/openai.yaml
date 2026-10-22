@@ -1,0 +1,11 @@
+interface:
+  display_name: "Build a deck"
+  short_description: "Use when a user asks to build or extend Japanese vocabulary decks from a to"
+  default_prompt: "Create a Japanese vocabulary deck for me."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "nihontekini"
+      description: "Manage Japanese flashcards and learning progress in Nihontekini"
+      transport: "streamable_http"
+      url: "https://api.nihontekini.app/mcp"

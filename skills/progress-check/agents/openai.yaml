@@ -1,0 +1,11 @@
+interface:
+  display_name: "Learning progress"
+  short_description: "Use when a user asks how their Japanese learning is going, what is due, how"
+  default_prompt: "How is my Japanese study going?"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "nihontekini"
+      description: "Manage Japanese flashcards and learning progress in Nihontekini"
+      transport: "streamable_http"
+      url: "https://api.nihontekini.app/mcp"
