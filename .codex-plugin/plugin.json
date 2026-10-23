@@ -19,7 +19,7 @@
     "composerIcon": "./assets/logo.png"
   },
   "name": "nihontekini",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Connect Nihontekini Japanese vocabulary decks, spaced repetition and quizzes to ChatGPT.",
   "author": {
     "name": "Nihontekini"
