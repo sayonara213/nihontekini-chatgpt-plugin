@@ -8,4 +8,4 @@ dependencies:
       value: "nihontekini"
       description: "Manage Japanese flashcards and learning progress in Nihontekini"
       transport: "streamable_http"
-      url: "https://api.nihontekini.app/mcp"
+      url: "https://api.nihontekini.app/mcp/chatgpt"
