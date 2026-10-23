@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "nihontekini",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Connect Nihontekini Japanese vocabulary decks, spaced repetition and quizzes to ChatGPT.",
   "author": {
     "name": "Nihontekini"
@@ -43,47 +43,31 @@
             {
               "description": "Build a themed deck",
               "prompt": "Add 20 N5 food words to a deck called Kitchen.",
-              "tools_triggered": [
-                "list_decks",
-                "add_cards"
-              ],
+              "tools_triggered": "list_decks, add_cards",
               "expected_behavior": "Creates or reuses the Kitchen deck, adds N5 food words with kana readings and English-only meanings, and reports how many cards were added or skipped."
             },
             {
               "description": "Quiz on weak words",
               "prompt": "Quiz me on the Japanese words I keep forgetting.",
-              "tools_triggered": [
-                "get_weak_words",
-                "make_quiz",
-                "record_quiz_answers"
-              ],
+              "tools_triggered": "get_weak_words, make_quiz, record_quiz_answers",
               "expected_behavior": "Asks one question at a time without revealing the answer, records the answers and summarizes the score."
             },
             {
               "description": "Weekly progress",
               "prompt": "How am I doing with my Japanese this week?",
-              "tools_triggered": [
-                "get_progress",
-                "get_weak_words"
-              ],
+              "tools_triggered": "get_progress, get_weak_words",
               "expected_behavior": "Summarizes reviews done and due, words learned and the weakest words, using only returned data."
             },
             {
               "description": "Fix a card's reading",
               "prompt": "Fix the reading of 今日 in my cards, it should be きょう.",
-              "tools_triggered": [
-                "find_cards",
-                "edit_card"
-              ],
+              "tools_triggered": "find_cards, edit_card",
               "expected_behavior": "Finds the user's own 今日 card, sets the reading to きょう and confirms the change."
             },
             {
               "description": "Suspend a known word",
               "prompt": "I already know ありがとう, stop showing it to me.",
-              "tools_triggered": [
-                "find_cards",
-                "suspend_cards"
-              ],
+              "tools_triggered": "find_cards, suspend_cards",
               "expected_behavior": "Suspends the matching card and says it will no longer appear in reviews."
             }
           ],
