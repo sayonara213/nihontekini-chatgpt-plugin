@@ -88,7 +88,7 @@
         }
       },
       "publication": {
-        "release_notes": "Initial release"
+        "release_notes": "Skills no longer mention account limits."
       }
     }
   }
